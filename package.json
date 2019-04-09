@@ -1,0 +1,22 @@
+{
+  "name": "@binxhealth/swapi",
+  "scripts": {
+    "lint": "eslint index.js"
+  },
+  "devDependencies": {
+    "@ianwalter/eslint-config": "^1.1.2",
+    "np": "^4.0.2"
+  },
+  "dependencies": {
+    "@ianwalter/print": "^2.0.2",
+    "@ianwalter/router": "^1.1.0",
+    "koa": "^2.7.0",
+    "koa-json": "^2.0.2"
+  },
+  "eslintConfig": {
+    "root": true,
+    "extends": [
+      "@ianwalter"
+    ]
+  }
+}
