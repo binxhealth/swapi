@@ -45,7 +45,10 @@ router.add('/', ctx => {
 // Add a route handler that returns 10 people per page.
 router.add('/api/people', (ctx, route) => {
   const page = route.searchParams.get('page') || 1
-  ctx.body = people.slice((page - 1) * 10, page * 10)
+  ctx.body = {
+    count: people.length,
+    results: people.slice((page - 1) * 10, page * 10).map(p => p.fields)
+  }
 })
 
 // Add a 404 Not Found handler that is executed when no routes match.
