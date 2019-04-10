@@ -1,7 +1,11 @@
 {
+  "private": true,
   "name": "@binxhealth/swapi",
+  "description": "The Star Wars API re-written using Node.js",
+  "version": "1.0.0",
   "scripts": {
-    "lint": "eslint index.js"
+    "lint": "eslint index.js",
+    "start": "node index.js"
   },
   "devDependencies": {
     "@ianwalter/eslint-config": "^1.1.2",

@@ -1,8 +1,10 @@
 const Koa = require('koa')
 const json = require('koa-json')
-const { print } = require('@ianwalter/print')
+const { print, chalk: { yellow } } = require('@ianwalter/print')
 const Router = require('@ianwalter/router')
+const pkg = require('./package.json')
 
+// Import the JSON data copied from http://github.com/phalt/swapi.
 const people = require('./data/people.json')
 
 // Create the Koa app instance.
@@ -28,21 +30,32 @@ app.use(async function disableCorsMiddleware (ctx, next) {
   return next()
 })
 
-//
+// Create the router instance.
 const router = new Router('http://localhost:8181')
 
-//
+// Add a root route that provides information about the service.
+router.add('/', ctx => {
+  ctx.body = {
+    name: pkg.name,
+    description: pkg.description,
+    version: pkg.version
+  }
+})
+
+// Add a route handler that returns 10 people per page.
 router.add('/api/people', (ctx, route) => {
   const page = route.searchParams.get('page') || 1
   ctx.body = people.slice((page - 1) * 10, page * 10)
 })
 
-//
+// Add a 404 Not Found handler that is executed when no routes match.
 function notFoundHandler (ctx) {
   ctx.status = 404
 }
 
-//
+// Handle the request by allowing the router to route it to a handler.
 app.use(ctx => router.match(ctx, notFoundHandler))
 
+// Start listening on port 8181.
 app.listen(8181)
+print.log('💫', yellow('Let the force be with you: http://localhost:8181'))
