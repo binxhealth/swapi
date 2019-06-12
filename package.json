@@ -5,9 +5,11 @@
   "version": "1.0.0",
   "scripts": {
     "lint": "eslint index.js",
+    "test": "bff",
     "start": "node index.js"
   },
   "devDependencies": {
+    "@ianwalter/bff": "^5.2.1",
     "@ianwalter/eslint-config": "^1.1.2",
     "np": "^4.0.2"
   },
