@@ -4,7 +4,7 @@
   "description": "The Star Wars API re-written using Node.js",
   "version": "1.0.0",
   "scripts": {
-    "lint": "eslint index.js",
+    "lint": "eslint .",
     "test": "bff",
     "start": "PORT=8181 node index.js"
   },
