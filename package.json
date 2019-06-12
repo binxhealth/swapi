@@ -10,12 +10,12 @@
   },
   "devDependencies": {
     "@ianwalter/bff": "^5.2.1",
-    "@ianwalter/eslint-config": "^1.1.2",
-    "np": "^4.0.2",
+    "@ianwalter/eslint-config": "^2.0.1",
+    "np": "^5.0.3",
     "supertest": "^4.0.2"
   },
   "dependencies": {
-    "@ianwalter/print": "^2.0.2",
+    "@ianwalter/print": "^2.3.1",
     "@ianwalter/router": "^1.1.0",
     "koa": "^2.7.0",
     "koa-json": "^2.0.2"
