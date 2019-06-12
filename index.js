@@ -60,5 +60,8 @@ function notFoundHandler (ctx) {
 app.use(ctx => router.match(ctx, notFoundHandler))
 
 // Start listening on port 8181.
-app.listen(8181)
-print.log('💫', yellow('Let the force be with you: http://localhost:8181'))
+const server = app.listen(process.env.PORT)
+const { port } = server.address()
+print.log('💫', yellow(`Let the force be with you: http://localhost:${port}`))
+
+module.exports = server
