@@ -178,7 +178,7 @@
   dependencies:
     "@babel/runtime" "^7.3.1"
 
-"@ianwalter/print@^3.0.0", "@ianwalter/print@^3.0.1":
+"@ianwalter/print@^3.0.1":
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/@ianwalter/print/-/print-3.0.1.tgz#73d81f83fcb6366331704985e0c7ebe8c914a812"
   integrity sha512-g2QKEUaOuhKR2WdY0nPXbBPA1KifKAH/9u47JdIIizkJQB+Mq1Pd6yLRKiaEQWQCUiPag3gIch+2YHVC4M1nPQ==
@@ -189,10 +189,10 @@
     has-ansi "^3.0.0"
     has-emoji "^1.0.0"
 
-"@ianwalter/router@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@ianwalter/router/-/router-1.1.0.tgz#a16e186555157f4803d937deeb5ed7d38705e25f"
-  integrity sha512-yk+eHcgk8tVDbIxkYKIFx1U1Z11qoc8V3PXdreeR4n5TydI8RPJhTmQ5l0Uq+AAdCp7BTpM6XaF90f0693VYcA==
+"@ianwalter/router@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@ianwalter/router/-/router-1.2.0.tgz#5f1e74f421fb6908bce5050d8750fcf052f192d9"
+  integrity sha512-F1GBxUNJp7K+DPeCL3+rk63Zz90YQLN1GNJWzdakchEDQ/diNakLSMYcLXNIxU4IkV75OG6tA/eNXg7ai3gCng==
 
 "@jest/console@^24.7.1":
   version "24.7.1"

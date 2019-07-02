@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@ianwalter/print": "^3.0.1",
-    "@ianwalter/router": "^1.1.0",
+    "@ianwalter/router": "^1.2.0",
     "koa": "^2.7.0",
     "koa-json": "^2.0.2"
   },
