@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "@ianwalter/bff": "^6.3.1",
-    "@ianwalter/eslint-config": "^2.0.1",
+    "@ianwalter/eslint-config": "^2.1.0",
     "np": "^5.0.3",
     "supertest": "^4.0.2"
   },
