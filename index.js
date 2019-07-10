@@ -31,7 +31,8 @@ app.use(async function disableCorsMiddleware (ctx, next) {
 })
 
 // Create the router instance.
-const router = new Router('http://localhost:8181')
+const specifiedPort = process.env.SWAPI_PORT
+const router = new Router(`http://localhost:${specifiedPort || 3000}`)
 
 // Add a root route that provides information about the service.
 router.add('/', ctx => {
@@ -59,8 +60,8 @@ function notFoundHandler (ctx) {
 // Handle the request by allowing the router to route it to a handler.
 app.use(ctx => router.match(ctx, notFoundHandler))
 
-// Start listening on port 8181.
-const server = app.listen(process.env.PORT)
+// Start listening on the specified (or randomized) port.
+const server = app.listen(specifiedPort)
 const { port } = server.address()
 print.log('💫', yellow(`Let the force be with you: http://localhost:${port}`))
 
