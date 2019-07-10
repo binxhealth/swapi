@@ -31,7 +31,7 @@ app.use(async function disableCorsMiddleware (ctx, next) {
 })
 
 // Create the router instance.
-const router = new Router('http://localhost:8181')
+const router = new Router('http://localhost:3000')
 
 // Add a root route that provides information about the service.
 router.add('/', ctx => {
