@@ -59,8 +59,8 @@ function notFoundHandler (ctx) {
 // Handle the request by allowing the router to route it to a handler.
 app.use(ctx => router.match(ctx, notFoundHandler))
 
-// Start listening on port 8181.
-const server = app.listen(process.env.PORT)
+// Start listening on port 3000.
+const server = app.listen(3000)
 const { port } = server.address()
 print.log('💫', yellow(`Let the force be with you: http://localhost:${port}`))
 
