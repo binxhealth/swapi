@@ -6,7 +6,7 @@
   "scripts": {
     "lint": "eslint .",
     "test": "bff",
-    "start": "node index.js"
+    "start": "SWAPI_PORT=3000 node index.js"
   },
   "devDependencies": {
     "@ianwalter/bff": "^6.3.1",
