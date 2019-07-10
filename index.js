@@ -43,8 +43,8 @@ router.add('/', ctx => {
 })
 
 // Add a route handler that returns 10 people per page.
-router.add('/api/people', (ctx, route) => {
-  const page = route.searchParams.get('page') || 1
+router.add('/api/people', (ctx, { url }) => {
+  const page = url.searchParams.get('page') || 1
   ctx.body = {
     count: people.length,
     results: people.slice((page - 1) * 10, page * 10).map(p => p.fields)
