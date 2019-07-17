@@ -11,6 +11,7 @@
   "devDependencies": {
     "@ianwalter/bff": "^6.3.1",
     "@ianwalter/eslint-config": "^2.1.0",
+    "@ianwalter/renovate-config": "^1.1.1",
     "np": "^5.0.3",
     "supertest": "^4.0.2"
   },
@@ -28,5 +29,10 @@
   },
   "engines": {
     "node": "12.6.0"
+  },
+  "renovate": {
+    "extends": [
+      "@ianwalter"
+    ]
   }
 }
