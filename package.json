@@ -16,7 +16,7 @@
     "supertest": "^4.0.2"
   },
   "dependencies": {
-    "@ianwalter/print": "^3.4.0",
+    "@ianwalter/print": "^4.0.2",
     "@ianwalter/router": "^1.3.0",
     "koa": "^2.8.1",
     "koa-json": "^2.0.2"
