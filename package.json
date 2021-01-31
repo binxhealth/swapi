@@ -13,7 +13,7 @@
     "@ianwalter/eslint-config": "^4.0.0",
     "@ianwalter/release": "^5.0.0",
     "@ianwalter/renovate-config": "^1.2.0",
-    "supertest": "^4.0.2"
+    "supertest": "^6.1.3"
   },
   "dependencies": {
     "@ianwalter/print": "^5.0.0",
