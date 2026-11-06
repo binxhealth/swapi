@@ -2619,9 +2619,7 @@ koa-json@^2.0.2:
     streaming-json-stringify "3"
 
 koa@^2.8.1:
-  version "2.11.0"
-  resolved "https://registry.yarnpkg.com/koa/-/koa-2.11.0.tgz#fe5a51c46f566d27632dd5dc8fd5d7dd44f935a4"
-  integrity sha512-EpR9dElBTDlaDgyhDMiLkXrPwp6ZqgAIBvhhmxQ9XN4TFgW+gEz6tkcsNI6BnUbUftrKDjVFj4lW2/J2aNBMMA==
+  version "2.16.4"
   dependencies:
     accepts "^1.3.5"
     cache-content-type "^1.0.0"
